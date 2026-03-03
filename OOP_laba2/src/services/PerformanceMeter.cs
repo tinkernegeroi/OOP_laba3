@@ -9,7 +9,7 @@ public class PerformanceMeter
     private static Random rnd = new Random();
     private static RandomGenerator _generator = new RandomGenerator();
 
-    private const int size = 100_000_000;
+    private const int size = 100_000;
     
     public static AirportCollection collection = new AirportCollection();
     
