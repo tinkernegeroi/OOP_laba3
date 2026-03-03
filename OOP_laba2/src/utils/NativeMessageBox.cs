@@ -1,0 +1,18 @@
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace OOP_laba2.utils;
+
+public class NativeMessageBox
+{
+    [DllImport("user32.dll", CharSet = CharSet.Unicode)]
+    public static extern int MessageBox(
+        IntPtr hWnd,
+        string lpText,
+        string lpCaption,
+        uint uType
+    );
+    
+    public const uint MB_OK = 0x00000000;
+    public const uint MB_ICONERROR = 0x00000010;
+}
