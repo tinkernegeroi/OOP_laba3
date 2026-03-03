@@ -40,7 +40,7 @@ partial class Form1
             labInfoLabel.Name = "labInfoLabel";
             labInfoLabel.Size = new System.Drawing.Size(485, 348);
             labInfoLabel.TabIndex = 0;
-            labInfoLabel.Text = ("Лабораторная работа №2. Выполнили студенты группы 24ВП1 Песков Роман и Шадчина Ел" + "ена");
+            labInfoLabel.Text = ("Лабораторная работа №3. Выполнили студенты группы 24ВП1 Песков Роман и Шадчина Ел" + "ена");
             // 
             // labInfoButton
             // 
@@ -64,7 +64,7 @@ partial class Form1
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MaximizeBox = false;
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "OOP laba 2";
+            Text = "OOP laba 3";
             ResumeLayout(false);
         }
 

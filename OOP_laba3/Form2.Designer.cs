@@ -296,7 +296,7 @@ partial class Form2
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         Location = new System.Drawing.Point(15, 15);
         MaximizeBox = false;
-        Text = "OOP2";
+        Text = "OOP3";
         ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
         ((System.ComponentModel.ISupportInitialize)numericUpDown_Obj).EndInit();
         ResumeLayout(false);
