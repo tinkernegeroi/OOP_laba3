@@ -1,13 +1,19 @@
-﻿using OOP_laba2.services;
+﻿using OOP_laba2.classes;
+using OOP_laba2.services;
+using OOP_laba2.utils;
 
 namespace OOP_laba2;
 
 public partial class Form2 : Form
 {
+    private AirportCollection _list;
     
+    private ListEventListener _listener;
     public Form2()
     {
         InitializeComponent();
+        _list = new AirportCollection();
+        _listener = new ListEventListener(_list, textBox_Actions);
         listView1.View = View.Details;
     }
     private void button_Back_Click(object sender, EventArgs e)
@@ -18,6 +24,27 @@ public partial class Form2 : Form
     private void button_Exit_Click(object sender, EventArgs e)
     {
         Application.Exit();
+    }
+    
+    private void RefreshObjectGrid()
+    {
+        dataGridView1.Rows.Clear();
+
+        foreach ( Airport airport in _list.List)
+        {
+            int index = _list.List.IndexOf(airport);
+            
+            dataGridView1.Rows.Add(
+                index,
+                airport.Name,
+                airport.Location,
+                airport.FlightsPerDay,
+                airport.TicketsSold,
+                airport.Balance,
+                airport.Rating,
+                airport.EmployeesCount
+            );
+        }
     }
 
     private async void button3_Click(object sender, EventArgs e)
@@ -55,5 +82,42 @@ public partial class Form2 : Form
 
         button_Measure.Text = "Измерить";
         button_Measure.Enabled = true;
+    }
+
+    private void button_CreateObj_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            _list.AddRandomItem();
+            RefreshObjectGrid();
+        }
+        catch (Exception exception)
+        {
+            NativeMessageBox.MessageBox(
+                0,
+                exception.Message,
+                "Ошибка",
+                NativeMessageBox.MB_OK | NativeMessageBox.MB_ICONERROR
+            );
+        }
+    }
+
+    private void button_DeleteObj_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            int index = (int)numericUpDown_Obj.Value;
+            _list.Remove(index);
+            RefreshObjectGrid();
+        }
+        catch (Exception exception)
+        {
+            NativeMessageBox.MessageBox(
+                0,
+                exception.Message,
+                "Ошибка",
+                NativeMessageBox.MB_OK | NativeMessageBox.MB_ICONERROR
+            );
+        }
     }
 }

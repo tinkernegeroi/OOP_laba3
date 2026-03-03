@@ -30,7 +30,7 @@ public class AirportCollection
         if (index >= 0 && index < List.Count)
         {
             List.RemoveAt(index);
-            ItemRemoved?.Invoke($"Элемент с индексом {index} удален");
+            ItemRemoved?.Invoke($"Элемент с индексом {index} удален" + Environment.NewLine);
         }
         else
         {

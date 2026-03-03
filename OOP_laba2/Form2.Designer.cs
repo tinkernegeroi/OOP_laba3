@@ -47,11 +47,13 @@ partial class Form2
         button_CreateObj = new System.Windows.Forms.Button();
         button_DeleteObj = new System.Windows.Forms.Button();
         listView1 = new System.Windows.Forms.ListView();
-        button_Measure = new System.Windows.Forms.Button();
         columnHeader1 = new System.Windows.Forms.ColumnHeader();
         columnHeader2 = new System.Windows.Forms.ColumnHeader();
         columnHeader3 = new System.Windows.Forms.ColumnHeader();
         columnHeader4 = new System.Windows.Forms.ColumnHeader();
+        button_Measure = new System.Windows.Forms.Button();
+        label1 = new System.Windows.Forms.Label();
+        label2 = new System.Windows.Forms.Label();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)numericUpDown_Obj).BeginInit();
         SuspendLayout();
@@ -80,7 +82,7 @@ partial class Form2
         // 
         dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
         dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8 });
-        dataGridView1.Location = new System.Drawing.Point(12, 12);
+        dataGridView1.Location = new System.Drawing.Point(12, 34);
         dataGridView1.Name = "dataGridView1";
         dataGridView1.Size = new System.Drawing.Size(630, 192);
         dataGridView1.TabIndex = 2;
@@ -128,7 +130,7 @@ partial class Form2
         // 
         // textBox_Actions
         // 
-        textBox_Actions.Location = new System.Drawing.Point(673, 13);
+        textBox_Actions.Location = new System.Drawing.Point(673, 34);
         textBox_Actions.Multiline = true;
         textBox_Actions.Name = "textBox_Actions";
         textBox_Actions.ReadOnly = true;
@@ -139,6 +141,8 @@ partial class Form2
         // numericUpDown_Obj
         // 
         numericUpDown_Obj.Location = new System.Drawing.Point(43, 253);
+        numericUpDown_Obj.Maximum = new decimal(new int[] { 100000000, 0, 0, 0 });
+        numericUpDown_Obj.Minimum = new decimal(new int[] { 1000, 0, 0, -2147483648 });
         numericUpDown_Obj.Name = "numericUpDown_Obj";
         numericUpDown_Obj.Size = new System.Drawing.Size(249, 23);
         numericUpDown_Obj.TabIndex = 4;
@@ -151,6 +155,7 @@ partial class Form2
         button_CreateObj.TabIndex = 5;
         button_CreateObj.Text = "Создать объект";
         button_CreateObj.UseVisualStyleBackColor = true;
+        button_CreateObj.Click += button_CreateObj_Click;
         // 
         // button_DeleteObj
         // 
@@ -160,19 +165,44 @@ partial class Form2
         button_DeleteObj.TabIndex = 6;
         button_DeleteObj.Text = "Удалить объект";
         button_DeleteObj.UseVisualStyleBackColor = true;
+        button_DeleteObj.Click += button_DeleteObj_Click;
         // 
         // listView1
         // 
         listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
-        listView1.Location = new System.Drawing.Point(43, 292);
+        listView1.Location = new System.Drawing.Point(12, 292);
         listView1.Name = "listView1";
-        listView1.Size = new System.Drawing.Size(801, 220);
+        listView1.Size = new System.Drawing.Size(945, 220);
         listView1.TabIndex = 7;
         listView1.UseCompatibleStateImageBehavior = false;
         // 
+        // columnHeader1
+        // 
+        columnHeader1.Name = "columnHeader1";
+        columnHeader1.Text = "Коллекция";
+        columnHeader1.Width = 236;
+        // 
+        // columnHeader2
+        // 
+        columnHeader2.Name = "columnHeader2";
+        columnHeader2.Text = "Вставка";
+        columnHeader2.Width = 236;
+        // 
+        // columnHeader3
+        // 
+        columnHeader3.Name = "columnHeader3";
+        columnHeader3.Text = "Последовательная выборка";
+        columnHeader3.Width = 236;
+        // 
+        // columnHeader4
+        // 
+        columnHeader4.Name = "columnHeader4";
+        columnHeader4.Text = "Случайная выборка";
+        columnHeader4.Width = 236;
+        // 
         // button_Measure
         // 
-        button_Measure.Location = new System.Drawing.Point(394, 533);
+        button_Measure.Location = new System.Drawing.Point(435, 534);
         button_Measure.Name = "button_Measure";
         button_Measure.Size = new System.Drawing.Size(132, 38);
         button_Measure.TabIndex = 8;
@@ -180,25 +210,23 @@ partial class Form2
         button_Measure.UseVisualStyleBackColor = true;
         button_Measure.Click += button3_Click;
         // 
-        // columnHeader1
+        // label1
         // 
-        columnHeader1.Name = "columnHeader1";
-        columnHeader1.Text = "Коллекция";
+        label1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)204));
+        label1.Location = new System.Drawing.Point(274, 6);
+        label1.Name = "label1";
+        label1.Size = new System.Drawing.Size(159, 23);
+        label1.TabIndex = 9;
+        label1.Text = "Объекты";
         // 
-        // columnHeader2
+        // label2
         // 
-        columnHeader2.Name = "columnHeader2";
-        columnHeader2.Text = "Вставка";
-        // 
-        // columnHeader3
-        // 
-        columnHeader3.Name = "columnHeader3";
-        columnHeader3.Text = "Последовательная выборка";
-        // 
-        // columnHeader4
-        // 
-        columnHeader4.Name = "columnHeader4";
-        columnHeader4.Text = "Случайная выборка";
+        label2.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)204));
+        label2.Location = new System.Drawing.Point(765, 6);
+        label2.Name = "label2";
+        label2.Size = new System.Drawing.Size(102, 25);
+        label2.TabIndex = 10;
+        label2.Text = "События";
         // 
         // Form2
         // 
@@ -206,6 +234,8 @@ partial class Form2
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.SystemColors.Control;
         ClientSize = new System.Drawing.Size(969, 639);
+        Controls.Add(label2);
+        Controls.Add(label1);
         Controls.Add(button_Measure);
         Controls.Add(listView1);
         Controls.Add(button_DeleteObj);
@@ -215,13 +245,19 @@ partial class Form2
         Controls.Add(dataGridView1);
         Controls.Add(button_Exit);
         Controls.Add(button_Back);
+        FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         Location = new System.Drawing.Point(15, 15);
+        MaximizeBox = false;
         Text = "OOP2";
         ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
         ((System.ComponentModel.ISupportInitialize)numericUpDown_Obj).EndInit();
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Label label2;
+
+    private System.Windows.Forms.Label label1;
 
     private System.Windows.Forms.ColumnHeader columnHeader3;
     private System.Windows.Forms.ColumnHeader columnHeader4;
