@@ -8,6 +8,10 @@ public partial class Form2 : Form
 {
     private AirportCollection _list;
     
+    private readonly RandomAbstractFactory _factoryRnd = new RandomAbstractFactory();
+    
+    private readonly PremiumAbstractFactory _factoryPrem =  new PremiumAbstractFactory();
+    
     private ListEventListener _listener;
     public Form2()
     {
@@ -137,5 +141,24 @@ public partial class Form2 : Form
                 NativeMessageBox.MB_OK | NativeMessageBox.MB_ICONERROR
             );
         }
+    }
+
+    private void button_CreateRndFam_Click(object sender, EventArgs e)
+    {
+        var airport = _factoryRnd.CreateAirport();
+        var airplane = _factoryRnd.CreateAirplane();
+        
+        textBox_FactoryObj.Text += airport.ToString() + Environment.NewLine;
+        textBox_FactoryObj.Text += airplane.ToString() + Environment.NewLine;
+
+    }
+
+    private void button_CreatePremiumRndFam_Click(object sender, EventArgs e)
+    {
+        var airport = _factoryPrem.CreateAirport();
+        var airplane = _factoryPrem.CreateAirplane();
+        
+        textBox_FactoryObj.Text += airport.ToString() + Environment.NewLine;
+        textBox_FactoryObj.Text += airplane.ToString() + Environment.NewLine;
     }
 }

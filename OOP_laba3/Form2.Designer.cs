@@ -55,13 +55,16 @@ partial class Form2
         label1 = new System.Windows.Forms.Label();
         label2 = new System.Windows.Forms.Label();
         button_CreatePremiumObj = new System.Windows.Forms.Button();
+        textBox_FactoryObj = new System.Windows.Forms.TextBox();
+        button_CreateRndFam = new System.Windows.Forms.Button();
+        button_CreatePremFam = new System.Windows.Forms.Button();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)numericUpDown_Obj).BeginInit();
         SuspendLayout();
         // 
         // button_Back
         // 
-        button_Back.Location = new System.Drawing.Point(43, 592);
+        button_Back.Location = new System.Drawing.Point(3, 891);
         button_Back.Name = "button_Back";
         button_Back.Size = new System.Drawing.Size(115, 35);
         button_Back.TabIndex = 0;
@@ -71,7 +74,7 @@ partial class Form2
         // 
         // button_Exit
         // 
-        button_Exit.Location = new System.Drawing.Point(820, 592);
+        button_Exit.Location = new System.Drawing.Point(865, 891);
         button_Exit.Name = "button_Exit";
         button_Exit.Size = new System.Drawing.Size(115, 35);
         button_Exit.TabIndex = 1;
@@ -239,12 +242,45 @@ partial class Form2
         button_CreatePremiumObj.UseVisualStyleBackColor = true;
         button_CreatePremiumObj.Click += button_CreatePremiumObj_Click;
         // 
+        // textBox_FactoryObj
+        // 
+        textBox_FactoryObj.Location = new System.Drawing.Point(42, 591);
+        textBox_FactoryObj.Multiline = true;
+        textBox_FactoryObj.Name = "textBox_FactoryObj";
+        textBox_FactoryObj.ReadOnly = true;
+        textBox_FactoryObj.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+        textBox_FactoryObj.Size = new System.Drawing.Size(524, 294);
+        textBox_FactoryObj.TabIndex = 12;
+        // 
+        // button_CreateRndFam
+        // 
+        button_CreateRndFam.Location = new System.Drawing.Point(643, 615);
+        button_CreateRndFam.Name = "button_CreateRndFam";
+        button_CreateRndFam.Size = new System.Drawing.Size(161, 59);
+        button_CreateRndFam.TabIndex = 13;
+        button_CreateRndFam.Text = "Создать рандом объекты";
+        button_CreateRndFam.UseVisualStyleBackColor = true;
+        button_CreateRndFam.Click += button_CreateRndFam_Click;
+        // 
+        // button_CreatePremFam
+        // 
+        button_CreatePremFam.Location = new System.Drawing.Point(643, 780);
+        button_CreatePremFam.Name = "button_CreatePremFam";
+        button_CreatePremFam.Size = new System.Drawing.Size(161, 59);
+        button_CreatePremFam.TabIndex = 14;
+        button_CreatePremFam.Text = "Создать премиум объекты";
+        button_CreatePremFam.UseVisualStyleBackColor = true;
+        button_CreatePremFam.Click += button_CreatePremiumRndFam_Click;
+        // 
         // Form2
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.SystemColors.Control;
-        ClientSize = new System.Drawing.Size(969, 639);
+        ClientSize = new System.Drawing.Size(992, 938);
+        Controls.Add(button_CreatePremFam);
+        Controls.Add(button_CreateRndFam);
+        Controls.Add(textBox_FactoryObj);
         Controls.Add(button_CreatePremiumObj);
         Controls.Add(label2);
         Controls.Add(label1);
@@ -266,6 +302,11 @@ partial class Form2
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Button button_CreateRndFam;
+    private System.Windows.Forms.Button button_CreatePremFam;
+
+    private System.Windows.Forms.TextBox textBox_FactoryObj;
 
     private System.Windows.Forms.Button button_CreatePremiumObj;
 
