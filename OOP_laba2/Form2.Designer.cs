@@ -48,6 +48,10 @@ partial class Form2
         button_DeleteObj = new System.Windows.Forms.Button();
         listView1 = new System.Windows.Forms.ListView();
         button_Measure = new System.Windows.Forms.Button();
+        columnHeader1 = new System.Windows.Forms.ColumnHeader();
+        columnHeader2 = new System.Windows.Forms.ColumnHeader();
+        columnHeader3 = new System.Windows.Forms.ColumnHeader();
+        columnHeader4 = new System.Windows.Forms.ColumnHeader();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)numericUpDown_Obj).BeginInit();
         SuspendLayout();
@@ -159,6 +163,7 @@ partial class Form2
         // 
         // listView1
         // 
+        listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
         listView1.Location = new System.Drawing.Point(43, 292);
         listView1.Name = "listView1";
         listView1.Size = new System.Drawing.Size(801, 220);
@@ -174,6 +179,26 @@ partial class Form2
         button_Measure.Text = "Измерить";
         button_Measure.UseVisualStyleBackColor = true;
         button_Measure.Click += button3_Click;
+        // 
+        // columnHeader1
+        // 
+        columnHeader1.Name = "columnHeader1";
+        columnHeader1.Text = "Коллекция";
+        // 
+        // columnHeader2
+        // 
+        columnHeader2.Name = "columnHeader2";
+        columnHeader2.Text = "Вставка";
+        // 
+        // columnHeader3
+        // 
+        columnHeader3.Name = "columnHeader3";
+        columnHeader3.Text = "Последовательная выборка";
+        // 
+        // columnHeader4
+        // 
+        columnHeader4.Name = "columnHeader4";
+        columnHeader4.Text = "Случайная выборка";
         // 
         // Form2
         // 
@@ -197,6 +222,13 @@ partial class Form2
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.ColumnHeader columnHeader3;
+    private System.Windows.Forms.ColumnHeader columnHeader4;
+
+    private System.Windows.Forms.ColumnHeader columnHeader2;
+
+    private System.Windows.Forms.ColumnHeader columnHeader1;
 
     private System.Windows.Forms.ListView listView1;
     private System.Windows.Forms.Button button_Measure;

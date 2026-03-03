@@ -4,9 +4,9 @@ namespace OOP_laba2.classes;
 
 public delegate void ListChanged(string msg);
 
-public class AirportCollection(List<Airport> list)
+public class AirportCollection
 {
-    public List<Airport> List = list;
+    public List<Airport> List;
     
     private readonly RandomGenerator _randomGenerator = new RandomGenerator();
     
@@ -14,7 +14,11 @@ public class AirportCollection(List<Airport> list)
     
     public event ListChanged ItemRemoved;
 
-
+    public AirportCollection()
+    {
+        List = new List<Airport>();
+    }
+    
     public void Add(Airport airport)
     {
         List.Add(airport);
@@ -37,5 +41,10 @@ public class AirportCollection(List<Airport> list)
     public void AddRandomItem()
     {
         Add(_randomGenerator.CreateRandomAirport());
+    }
+    
+    public int GetItemCount()
+    {
+         return List.Count;
     }
 }
