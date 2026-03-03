@@ -8,7 +8,9 @@ public class AirportCollection
 {
     public List<Airport> List;
     
-    private readonly RandomGenerator _randomGenerator = new RandomGenerator();
+    private readonly RandomAbstractFactory _randomGenerator = new RandomAbstractFactory();
+    
+    private readonly PremiumAbstractFactory _randomPremiumGenerator = new PremiumAbstractFactory();
     
     public event ListChanged ItemAdded;
     
@@ -40,11 +42,16 @@ public class AirportCollection
 
     public void AddRandomItem()
     {
-        Add(_randomGenerator.CreateRandomAirport());
+        Add(_randomGenerator.CreateAirport());
+    }
+
+    public void AddRandomPremiumItem()
+    {
+        Add(_randomPremiumGenerator.CreateAirport());
     }
     
     public int GetItemCount()
     {
-         return List.Count;
+        return List.Count;
     }
 }
