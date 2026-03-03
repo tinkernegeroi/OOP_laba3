@@ -7,7 +7,7 @@ public class PerformanceMeter
 {
     private static Stopwatch stopwatch = new Stopwatch();
     private static Random rnd = new Random();
-    private static RandomGenerator _generator = new RandomGenerator();
+    private static RandomAbstractFactory _generator = new RandomAbstractFactory();
 
     private const int size = 100_000;
     
@@ -30,7 +30,7 @@ public class PerformanceMeter
         array =  new Airport[size];
         stopwatch.Reset();
         stopwatch.Start();
-        for (int i = 0; i < size; i++) array[i] = _generator.CreateRandomAirport();
+        for (int i = 0; i < size; i++) array[i] = _generator.CreateAirport();
         stopwatch.Stop();
         return (int)stopwatch.ElapsedMilliseconds;
     }
