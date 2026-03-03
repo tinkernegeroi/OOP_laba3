@@ -120,4 +120,22 @@ public partial class Form2 : Form
             );
         }
     }
+
+    private void button_CreatePremiumObj_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            _list.AddRandomPremiumItem();
+            RefreshObjectGrid();
+        }
+        catch (Exception exception)
+        {
+            NativeMessageBox.MessageBox(
+                0,
+                exception.Message,
+                "Ошибка",
+                NativeMessageBox.MB_OK | NativeMessageBox.MB_ICONERROR
+            );
+        }
+    }
 }

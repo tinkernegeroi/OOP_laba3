@@ -54,6 +54,7 @@ partial class Form2
         button_Measure = new System.Windows.Forms.Button();
         label1 = new System.Windows.Forms.Label();
         label2 = new System.Windows.Forms.Label();
+        button_CreatePremiumObj = new System.Windows.Forms.Button();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)numericUpDown_Obj).BeginInit();
         SuspendLayout();
@@ -149,7 +150,7 @@ partial class Form2
         // 
         // button_CreateObj
         // 
-        button_CreateObj.Location = new System.Drawing.Point(394, 253);
+        button_CreateObj.Location = new System.Drawing.Point(324, 253);
         button_CreateObj.Name = "button_CreateObj";
         button_CreateObj.Size = new System.Drawing.Size(173, 23);
         button_CreateObj.TabIndex = 5;
@@ -159,9 +160,9 @@ partial class Form2
         // 
         // button_DeleteObj
         // 
-        button_DeleteObj.Location = new System.Drawing.Point(659, 253);
+        button_DeleteObj.Location = new System.Drawing.Point(728, 251);
         button_DeleteObj.Name = "button_DeleteObj";
-        button_DeleteObj.Size = new System.Drawing.Size(173, 23);
+        button_DeleteObj.Size = new System.Drawing.Size(173, 25);
         button_DeleteObj.TabIndex = 6;
         button_DeleteObj.Text = "Удалить объект";
         button_DeleteObj.UseVisualStyleBackColor = true;
@@ -228,12 +229,23 @@ partial class Form2
         label2.TabIndex = 10;
         label2.Text = "События";
         // 
+        // button_CreatePremiumObj
+        // 
+        button_CreatePremiumObj.Location = new System.Drawing.Point(530, 253);
+        button_CreatePremiumObj.Name = "button_CreatePremiumObj";
+        button_CreatePremiumObj.Size = new System.Drawing.Size(173, 23);
+        button_CreatePremiumObj.TabIndex = 11;
+        button_CreatePremiumObj.Text = "Создать премиум объект";
+        button_CreatePremiumObj.UseVisualStyleBackColor = true;
+        button_CreatePremiumObj.Click += button_CreatePremiumObj_Click;
+        // 
         // Form2
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.SystemColors.Control;
         ClientSize = new System.Drawing.Size(969, 639);
+        Controls.Add(button_CreatePremiumObj);
         Controls.Add(label2);
         Controls.Add(label1);
         Controls.Add(button_Measure);
@@ -254,6 +266,8 @@ partial class Form2
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Button button_CreatePremiumObj;
 
     private System.Windows.Forms.Label label2;
 
