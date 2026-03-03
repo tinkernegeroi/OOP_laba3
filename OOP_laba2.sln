@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_laba2", "OOP_laba2\OOP_laba2.csproj", "{7DD1C7F8-30F8-4B14-A852-53153DFC3DC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_laba3", "OOP_laba3\OOP_laba3.csproj", "{7DD1C7F8-30F8-4B14-A852-53153DFC3DC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{67A8DF76-F38A-4518-827D-56B524E0FC2E}"
 EndProject

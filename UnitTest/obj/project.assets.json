@@ -811,11 +811,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roman\\RiderProjects\\OOP_laba2\\UnitTest\\UnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\UnitTest\\UnitTest.csproj",
       "projectName": "UnitTest",
-      "projectPath": "C:\\Users\\Roman\\RiderProjects\\OOP_laba2\\UnitTest\\UnitTest.csproj",
+      "projectPath": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\UnitTest\\UnitTest.csproj",
       "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roman\\RiderProjects\\OOP_laba2\\UnitTest\\obj\\",
+      "outputPath": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

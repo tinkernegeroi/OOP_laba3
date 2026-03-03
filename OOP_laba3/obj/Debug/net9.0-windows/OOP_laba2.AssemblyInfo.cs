@@ -10,13 +10,15 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("UnitTest")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("OOP_laba2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f918ff7db86b5d2c7e17b44fce1da4b4b4e8e19b")]
-[assembly: System.Reflection.AssemblyProductAttribute("UnitTest")]
-[assembly: System.Reflection.AssemblyTitleAttribute("UnitTest")]
+[assembly: System.Reflection.AssemblyProductAttribute("OOP_laba2")]
+[assembly: System.Reflection.AssemblyTitleAttribute("OOP_laba2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
 
