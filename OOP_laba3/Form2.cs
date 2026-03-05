@@ -8,9 +8,9 @@ public partial class Form2 : Form
 {
     private AirportCollection _list;
     
-    private readonly RandomAbstractFactory _factoryRnd = new RandomAbstractFactory();
+    private readonly AbstractFactory _factoryRnd = new RandomAbstractFactory();
     
-    private readonly PremiumAbstractFactory _factoryPrem =  new PremiumAbstractFactory();
+    private readonly AbstractFactory _factoryPrem =  new PremiumAbstractFactory();
     
     private ListEventListener _listener;
     public Form2()

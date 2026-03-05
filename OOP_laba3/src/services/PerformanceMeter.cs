@@ -7,7 +7,7 @@ public class PerformanceMeter
 {
     private static Stopwatch stopwatch = new Stopwatch();
     private static Random rnd = new Random();
-    private static RandomAbstractFactory _generator = new RandomAbstractFactory();
+    private static AbstractFactory _generator = new RandomAbstractFactory();
 
     private const int size = 100_000;
     

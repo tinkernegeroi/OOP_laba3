@@ -8,9 +8,9 @@ public class AirportCollection
 {
     public List<Airport> List;
     
-    private readonly RandomAbstractFactory _randomGenerator = new RandomAbstractFactory();
+    private readonly AbstractFactory _randomGenerator = new RandomAbstractFactory();
     
-    private readonly PremiumAbstractFactory _randomPremiumGenerator = new PremiumAbstractFactory();
+    private readonly AbstractFactory _randomPremiumGenerator = new PremiumAbstractFactory();
     
     public event ListChanged ItemAdded;
     
