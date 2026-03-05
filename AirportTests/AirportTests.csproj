@@ -17,4 +17,8 @@
         <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\OOP_laba3\OOP_laba3.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -1,0 +1,17 @@
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\bin\Debug\net9.0-windows\OOP_laba3.exe
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\bin\Debug\net9.0-windows\OOP_laba3.deps.json
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\bin\Debug\net9.0-windows\OOP_laba3.runtimeconfig.json
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\bin\Debug\net9.0-windows\OOP_laba3.dll
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\bin\Debug\net9.0-windows\OOP_laba3.pdb
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\OOP_laba3.Form2.resources
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\OOP_laba3.csproj.GenerateResource.cache
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\OOP_laba3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\OOP_laba3.AssemblyInfoInputs.cache
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\OOP_laba3.AssemblyInfo.cs
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\OOP_laba3.csproj.CoreCompileInputs.cache
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\OOP_laba3.sourcelink.json
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\OOP_laba3.dll
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\refint\OOP_laba3.dll
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\OOP_laba3.pdb
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\OOP_laba3.genruntimeconfig.cache
+C:\Users\Roman\RiderProjects\OOP_laba3\OOP_laba3\obj\Debug\net9.0-windows\ref\OOP_laba3.dll

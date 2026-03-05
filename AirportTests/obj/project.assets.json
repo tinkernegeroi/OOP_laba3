@@ -1080,6 +1080,19 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "OOP_laba3/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/OOP_laba3.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OOP_laba3.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       }
     }
   },
@@ -2300,13 +2313,19 @@
         "system.reflection.metadata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "OOP_laba3/1.0.0": {
+      "type": "project",
+      "path": "../OOP_laba3/OOP_laba3.csproj",
+      "msbuildProject": "../OOP_laba3/OOP_laba3.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0-windows7.0": [
       "MSTest >= 4.1.0",
       "MSTest.TestAdapter >= 4.1.0",
-      "Microsoft.NET.Test.Sdk >= 18.3.0"
+      "Microsoft.NET.Test.Sdk >= 18.3.0",
+      "OOP_laba3 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2340,7 +2359,11 @@
       "frameworks": {
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj": {
+              "projectPath": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
