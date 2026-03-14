@@ -1,6 +1,6 @@
 ﻿namespace OOP_laba3;
 
-partial class Form1
+partial class WelcomeForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.

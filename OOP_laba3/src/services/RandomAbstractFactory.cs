@@ -2,22 +2,34 @@
 
 namespace OOP_laba3.services;
 
+/// <summary>
+/// Конкретная реализация <see cref="AbstractFactory"/>, генерирующая
+/// стандартные объекты аэропортов и самолётов со случайными характеристиками.
+/// </summary>
 public class RandomAbstractFactory : AbstractFactory
 {
-    private static readonly string[] Names = 
+    /// <summary>Набор названий российских аэропортов.</summary>
+    private static readonly string[] Names =
         { "Шереметьево", "Домодедово", "Внуково", "Пулково", "Кольцово" };
-    
-    private static readonly string[] Locations = 
+
+    /// <summary>Набор городов расположения аэропортов.</summary>
+    private static readonly string[] Locations =
         { "Москва", "Санкт-Петербург", "Екатеринбург", "Казань", "Новосибирск" };
-    
+
+    /// <summary>Набор моделей самолётов эконом- и среднего класса.</summary>
     private static readonly string[] AirplaneModels =
         { "Boeing 737", "Airbus A320", "Superjet 100" };
 
+    /// <summary>Набор должностей сотрудников аэропорта.</summary>
     private static readonly string[] Positions =
         { "Пилот", "Диспетчер", "Инженер" };
 
     private readonly Random _random = new Random();
 
+    /// <summary>
+    /// Создаёт стандартный аэропорт со случайными характеристиками в пределах типичных значений.
+    /// </summary>
+    /// <returns>Экземпляр <see cref="Airport"/> с обычными характеристиками.</returns>
     public Airport CreateAirport()
     {
         return new Airport(
@@ -31,6 +43,10 @@ public class RandomAbstractFactory : AbstractFactory
         );
     }
 
+    /// <summary>
+    /// Создаёт стандартный самолёт со случайными характеристиками.
+    /// </summary>
+    /// <returns>Экземпляр <see cref="Airplane"/> с обычными характеристиками.</returns>
     public Airplane CreateAirplane()
     {
         return new Airplane(
@@ -39,5 +55,4 @@ public class RandomAbstractFactory : AbstractFactory
             _random.Next(2000, 8000)
         );
     }
-    
 }

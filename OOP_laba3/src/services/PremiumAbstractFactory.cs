@@ -2,22 +2,34 @@
 
 namespace OOP_laba3.services;
 
+/// <summary>
+/// Конкретная реализация <see cref="AbstractFactory"/>, генерирующая
+/// премиум-объекты аэропортов и самолётов с высокими характеристиками.
+/// </summary>
 public class PremiumAbstractFactory : AbstractFactory
 {
+    /// <summary>Набор названий для премиум-аэропортов.</summary>
     private static readonly string[] AirportNames =
         { "VIP International", "Elite Sky Hub", "Royal AirPort", "Platinum Wings" };
 
+    /// <summary>Набор премиум-локаций аэропортов.</summary>
     private static readonly string[] Locations =
         { "Дубай", "Сингапур", "Монако", "Цюрих" };
 
+    /// <summary>Набор моделей самолётов бизнес- и люкс-класса.</summary>
     private static readonly string[] AirplaneModels =
         { "Boeing 787 Dreamliner", "Airbus A350", "Gulfstream G700", "Bombardier Global 8000" };
 
+    /// <summary>Набор должностей для персонала премиум-аэропортов.</summary>
     private static readonly string[] Positions =
         { "Главный пилот", "VIP Диспетчер", "Авиаконструктор", "Технический директор" };
 
     private readonly Random _random = new Random();
 
+    /// <summary>
+    /// Создаёт премиум-аэропорт со случайными, но заведомо высокими показателями.
+    /// </summary>
+    /// <returns>Экземпляр <see cref="Airport"/> с характеристиками премиум-класса.</returns>
     public Airport CreateAirport()
     {
         return new Airport(
@@ -31,6 +43,10 @@ public class PremiumAbstractFactory : AbstractFactory
         );
     }
 
+    /// <summary>
+    /// Создаёт дальнемагистральный самолёт бизнес-класса со случайными характеристиками.
+    /// </summary>
+    /// <returns>Экземпляр <see cref="Airplane"/> с характеристиками премиум-класса.</returns>
     public Airplane CreateAirplane()
     {
         return new Airplane(
@@ -39,5 +55,4 @@ public class PremiumAbstractFactory : AbstractFactory
             rangeKm: _random.Next(10_000, 18_000)
         );
     }
-    
 }

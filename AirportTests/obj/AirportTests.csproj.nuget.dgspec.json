@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\AirportTests\\AirportTests.csproj": {}
+    "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\AirportTests\\AirportTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\AirportTests\\AirportTests.csproj": {
+    "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\AirportTests\\AirportTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\AirportTests\\AirportTests.csproj",
+        "projectUniqueName": "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\AirportTests\\AirportTests.csproj",
         "projectName": "AirportTests",
-        "projectPath": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\AirportTests\\AirportTests.csproj",
-        "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\AirportTests\\obj\\",
+        "projectPath": "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\AirportTests\\AirportTests.csproj",
+        "packagesPath": "C:\\Users\\Рома\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\AirportTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Рома\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj": {
-                "projectPath": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj"
+              "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj": {
+                "projectPath": "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj"
               }
             }
           }
@@ -83,24 +83,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj": {
+    "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj",
+        "projectUniqueName": "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj",
         "projectName": "OOP_laba3",
-        "projectPath": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj",
-        "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Roman\\RiderProjects\\OOP_laba3\\OOP_laba3\\obj\\",
+        "projectPath": "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\OOP_laba3\\OOP_laba3.csproj",
+        "packagesPath": "C:\\Users\\Рома\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Рома\\RiderProjects\\OOP_laba3\\OOP_laba3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Рома\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -151,7 +151,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
