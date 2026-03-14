@@ -4,7 +4,7 @@ using OOP_laba3.utils;
 
 namespace OOP_laba3;
 
-public partial class Form2 : Form
+public partial class MainForm : Form
 {
     private AirportCollection _list;
     
@@ -13,7 +13,7 @@ public partial class Form2 : Form
     private readonly AbstractFactory _factoryPrem =  new PremiumAbstractFactory();
     
     private ListEventListener _listener;
-    public Form2()
+    public MainForm()
     {
         InitializeComponent();
         _list = new AirportCollection();

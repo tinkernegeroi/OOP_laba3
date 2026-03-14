@@ -2,7 +2,7 @@
 
 namespace OOP_laba3;
 
-partial class Form2
+partial class MainForm
 {
     /// <summary>
     /// Required designer variable.
